@@ -1,0 +1,17 @@
+[
+  {
+    "author": "Alice",
+    "content": "We need to clean up the login flow. Too many redirects.",
+    "timestamp": "2025-07-08T14:01:00Z"
+  },
+  {
+    "author": "Bob",
+    "content": "Yeah, I’ll remove the double redirect and simplify auth.",
+    "timestamp": "2025-07-08T14:02:10Z"
+  },
+  {
+    "author": "Alice",
+    "content": "Great — I’ll write docs and raise a PR once done.",
+    "timestamp": "2025-07-08T14:03:25Z"
+  }
+]
