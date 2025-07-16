@@ -17,3 +17,12 @@ app.include_router(api_router, prefix="/api"
 @app.get("/")
 async def root():
     return {"message": "Hello World"}       
+from pydantic import BaseModel
+
+class Input(BaseModel):
+    text: str
+
+@app.post("/generate")
+async def generate(input: Input):
+    return {"response": f"Got: {input.text}"}
+
