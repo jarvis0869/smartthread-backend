@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from app.api.threads import router as api_router
 from pydantic import BaseModel
 from typing import List
 from datetime import datetime

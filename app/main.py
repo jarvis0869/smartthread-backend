@@ -1,4 +1,6 @@
-from fastapi import FastAPI
+from app.api.threads import router as api_router
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -25,4 +27,8 @@ class Input(BaseModel):
 @app.post("/generate")
 async def generate(input: Input):
     return {"response": f"Got: {input.text}"}
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
 
