@@ -13,7 +13,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-from app.api import router as api_router
+from app.api.threads import router as api_router 
 app.include_router(api_router, prefix="/api"
 )
 @app.get("/")
